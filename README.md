@@ -1,4 +1,4 @@
-## .NET'de Wolwerine ile RabbitMQ kullanımı
+## .NET'de Wolverine ile RabbitMQ kullanımı
 
 Youtube için hazırladığım videonun reposu. 
 Destek için yıldız  vermeyi unutmayalım 🤗
