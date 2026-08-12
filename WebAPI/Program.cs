@@ -8,12 +8,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddServiceDefaults();
 
 builder.Services.AddInfrastructure();
-builder.Services.AddFluentEmail("info@dev.com")
+builder.Services
+    .AddFluentEmail("info@dev.com")
     .AddSmtpSender("localhost", 25);
 
 builder.Host.UseWolverine(x =>
 {
-    x.Discovery.IncludeAssembly(typeof(UserCreateCommand).Assembly);
+    x.Discovery
+    .IncludeAssembly(typeof(UserCreateCommand).Assembly);
     x.ServiceLocationPolicy = ServiceLocationPolicy.AllowedButWarn;
 });
 
