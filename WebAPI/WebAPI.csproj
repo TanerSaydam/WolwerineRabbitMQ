@@ -14,7 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
-    <ProjectReference Include="..\WolwerineRabbitMQ.ServiceDefaults\WolwerineRabbitMQ.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\WolverineRabbitMQ.ServiceDefaults\WolverineRabbitMQ.ServiceDefaults.csproj" />
   </ItemGroup>
 
 </Project>

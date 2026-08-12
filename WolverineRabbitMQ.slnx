@@ -3,6 +3,6 @@
   <Project Path="Domain/Domain.csproj" />
   <Project Path="Infrastructure/Infrastructure.csproj" />
   <Project Path="WebAPI/WebAPI.csproj" />
-  <Project Path="WolwerineRabbitMQ.AppHost/WolwerineRabbitMQ.AppHost.csproj" />
-  <Project Path="WolwerineRabbitMQ.ServiceDefaults/WolwerineRabbitMQ.ServiceDefaults.csproj" />
+  <Project Path="WolverineRabbitMQ.AppHost/WolverineRabbitMQ.AppHost.csproj" />
+  <Project Path="WolverineRabbitMQ.ServiceDefaults/WolverineRabbitMQ.ServiceDefaults.csproj" />
 </Solution>
