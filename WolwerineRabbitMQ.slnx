@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Application/Application.csproj" />
+  <Project Path="Domain/Domain.csproj" />
+  <Project Path="Infrastructure/Infrastructure.csproj" />
+  <Project Path="WebAPI/WebAPI.csproj" />
+  <Project Path="WolwerineRabbitMQ.AppHost/WolwerineRabbitMQ.AppHost.csproj" />
+  <Project Path="WolwerineRabbitMQ.ServiceDefaults/WolwerineRabbitMQ.ServiceDefaults.csproj" />
+</Solution>
