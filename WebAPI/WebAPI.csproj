@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="WolverineFx.RuntimeCompilation" Version="6.26.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
     <ProjectReference Include="..\WolwerineRabbitMQ.ServiceDefaults\WolwerineRabbitMQ.ServiceDefaults.csproj" />

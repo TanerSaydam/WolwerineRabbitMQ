@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TS.MediatR" Version="10.0.0" />
+    <PackageReference Include="WolverineFx" Version="6.26.0" />
   </ItemGroup>
 
   <ItemGroup>

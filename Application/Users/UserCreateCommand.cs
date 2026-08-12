@@ -1,17 +1,16 @@
 ﻿using Domain;
 using GenericRepository;
-using TS.MediatR;
 
 namespace Application.Users;
 
 public sealed record UserCreateCommand(
     string FirstName,
     string LastName,
-    string Email) : IRequest<Guid>;
+    string Email);
 
-internal sealed class UserCreateCommandHandler(
+public sealed class UserCreateCommandHandler(
     IUserRepository userRepository,
-    IUnitOfWork unitOfWork) : IRequestHandler<UserCreateCommand, Guid>
+    IUnitOfWork unitOfWork)
 {
     public async Task<Guid> Handle(UserCreateCommand request, CancellationToken cancellationToken)
     {
