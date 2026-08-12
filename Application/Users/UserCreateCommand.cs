@@ -1,5 +1,6 @@
 ﻿using Domain;
 using GenericRepository;
+using Wolverine;
 
 namespace Application.Users;
 
@@ -10,6 +11,7 @@ public sealed record UserCreateCommand(
 
 public sealed class UserCreateCommandHandler(
     IUserRepository userRepository,
+    IMessageBus messageBus,
     IUnitOfWork unitOfWork)
 {
     public async Task<Guid> Handle(UserCreateCommand request, CancellationToken cancellationToken)
@@ -23,7 +25,7 @@ public sealed class UserCreateCommandHandler(
 
         userRepository.Add(user);
         await unitOfWork.SaveChangesAsync(cancellationToken);
-
+        await messageBus.PublishAsync(new UserRegistered(request.Email));
         return user.Id;
     }
 }
